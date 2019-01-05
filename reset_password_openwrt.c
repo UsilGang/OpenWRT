@@ -58,7 +58,8 @@ return asciiStr;
 }
 
 int to_file(char *name, char *str){
- int fd=open(name,"w+");
+ //int fd=open(name,"w+");
+ int fd=open(name,O_CREAT|O_RDWR);
  if(fd) {
     write(fd,str,strlen(str));
     close(fd);
