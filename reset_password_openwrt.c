@@ -30,6 +30,9 @@ char *shadow_hex="726f6f743a3a303a303a39393939393a373a3a3a0d0a6461656d6f6e3a2a3a
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 int getHexVal(char c)
 {
